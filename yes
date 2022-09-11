@@ -1,0 +1,11 @@
+
+
+idlj -fall InternetBakingApp.idl
+
+javac *.java InternetBakingApp/*.java
+
+orbd -ORBInitialPort 1050
+
+java corbaServer -ORBInitialPort 1050 -ORBInitialHost localhost
+
+java corbaClient -ORBInitialPort 1050 -ORBInitialHost localhost

@@ -1,0 +1,9 @@
+module InternetBakingApp{
+	
+	interface InternetBaking{
+		boolean autenticar(in string usuario, in string senha);
+		double cosultarSaldo(in string  numeroConta);
+		boolean pagarServico(in string entidade, in string referencia);
+		boolean transferencia(in string numeroContaBenificiaria,in double montante);
+	};
+};
